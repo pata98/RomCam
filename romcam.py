@@ -8,5 +8,4 @@ import sleep
 camera = PiCamera()
 time.sleep(0.1)
 
-camera.start_preview()
-sleep(10)
+camera.capture('!/romcam/image1.jpg')
