@@ -7,5 +7,8 @@ import sleep
 # initialize camera
 camera = PiCamera()
 time.sleep(0.1)
+camera.start_preview()
+sleep(5)
 
 camera.capture('image1.jpg')
+camera.stop_preview()
