@@ -2,9 +2,11 @@
 from picamera.array import PiRGBArray
 from picamera import PiCamera
 import time
-import cv2
+import sleep
 
 # initialize camera
 camera = PiCamera()
-rawCap = PiRGBArray(camera)
 time.sleep(0.1)
+
+camera.start_preview()
+sleep(10)
