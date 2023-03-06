@@ -6,7 +6,7 @@ import time
 # initialize camera
 camera = PiCamera()
 time.sleep(0.1)
-#camera.start_preview()
-time.sleep(10)
+camera.start_preview()
+time.sleep(5)
 camera.capture('image1.jpg')
-#camera.stop_preview()
+camera.stop_preview()
